@@ -1,0 +1,135 @@
+
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #e8f5e9;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ .main-content {
+     background-color: #ffffff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 100%;
+     max-width: 500px;
+ }
+
+ h1 {
+     text-align: center;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
+ form {
+     margin-bottom: 20px;
+ }
+
+ form label {
+     display: block;
+     margin-bottom: 5px;
+     color: #666;
+ }
+
+ form input[type="text"],
+ form input[type="date"] {
+     width: calc(100% - 10px);
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+ button[type="submit"] {
+     width: 100%;
+     background-color: #00dd79;
+     color: white;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ button[type="submit"]:hover {
+     background-color: #0b7747;
+ }
+
+ .taskList {
+     margin-top: 20px;
+     max-height: 300px;
+     /* Limit the height of the task list */
+     overflow-y: auto;
+     /* Add scroll if content exceeds max-height */
+ }
+
+ .taskList .task-item {
+     background-color: #f9f9f9;
+     padding: 15px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     margin-top: 3px;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .taskList .task-item h3 {
+     margin: 0;
+     font-size: 18px;
+     color: #333;
+ }
+
+ .taskList .task-item p {
+     margin: 5px 0;
+     color: #666;
+ }
+
+ .taskList .task-item strong {
+     color: #333;
+ }
+
+ .taskList .task-item button {
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     background: transparent;
+     border: none;
+     font-size: 18px;
+     cursor: pointer;
+ }
+
+ .taskList .task-item button.edit-btn {
+     color: #007bff;
+     align-self: flex-start;
+ }
+
+ .taskList .task-item button.edit-btn:hover {
+     color: #0056b3;
+ }
+
+ .taskList .task-item button.delete-btn {
+     color: #dc3545;
+     margin-top: 60px;
+     align-self: flex-end;
+ }
+
+ .taskList .task-item button.delete-btn:hover {
+     color: #c82333;
+ }
+
+ .taskList input[type="text"],
+ .taskList input[type="date"] {
+     width: 80%;
+     padding: 8px;
+     margin-bottom: 5px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-size: 16px;
+ }
